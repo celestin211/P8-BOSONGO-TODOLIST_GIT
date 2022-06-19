@@ -10,8 +10,8 @@ Workflow
 "Fork" repository
 ------------
 - Make a request by email to be added to the project as a collaborator.
-- Create a personal fork from the main repository: https://github.com/celestin211/P8-BOSONGO-TODO
-- After the fork of the repository to your personal space and the clone on your machine, remember to add the link to the main that you will name "upstream": `git remote add upstream https://github.com/celestin211/P8-BOSONGO-TODO`
+- Create a personal fork from the main repository: https://github.com/celestin211/PJ8_TODO
+- After the fork of the repository to your personal space and the clone on your machine, remember to add the link to the main that you will name "upstream": `git remote add upstream https://github.com/celestin211/PJ8_TODO`
 - Update the develop branch with a `git pull upstream develop` and proceed to install the project, see README.md
 
 Contribute to the project
