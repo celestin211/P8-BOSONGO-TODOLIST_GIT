@@ -1,10 +1,10 @@
 #OPENCLASSROOMS TodoList#
 
-## Description of need ##
+' Description of need '
 
-### Bug Fixes ###
+'Bug Fixes '
 
-### A task must be attached to a user ###
+' A task must be attached to a user '
 
 Currently, when a task is created, it is not attached to a user. You are asked to bring the
 necessary corrections so that automatically, when the task is saved, the authenticated user is attached to
@@ -23,9 +23,9 @@ following:
 
 When modifying a user, it is also possible to change the role of a user.
 
-### Implementing new features ###
+' Implementing new features '
 
-#### Permission ####
+' Permission '
 
 Only users with the administrator role (ROLE_ADMIN) should be able to access the management pages of
 users.
@@ -35,7 +35,7 @@ Tasks can only be deleted by users who created the task in question.
 Tasks attached to the “anonymous” user can only be deleted by users with the
 administrator role (ROLE_ADMIN).
 
-#### Implementing automated tests ####
+' Implementing automated tests '
 
 You are required to implement the automated tests (unit and functional tests) necessary to ensure that
 the operation of the application is well in line with the requests.
@@ -44,7 +44,7 @@ These tests must be implemented with PHPUnit; you can also use Behat for the fun
 
 You will provide test data in order to be able to prove operation in the cases explained in this document.
 
-## Facility ##
+' Facility '
 
 1. Clone the repo:
 ```
