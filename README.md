@@ -48,7 +48,7 @@ You will provide test data in order to be able to prove operation in the cases e
 
 1. Clone the repo:
 ```
-    git clone https://github.com/celestin211/PJ8_TODO
+  https://github.com/celestin211/P8-BOSONGO-TODOLIST
 ```
 
 2. Edit the .env with your information.
