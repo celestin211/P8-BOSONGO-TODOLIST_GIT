@@ -1,24 +1,12 @@
-OPENCLASSROOMS TodoList - How to participate in the project
+OPENCLASSROOMS TodoList - Comment participer au projet
 ================================================
 
-Workflow
---------
-- Each member attached to the project will have restricted rights as a reporter: the push to the main repository is impossible.
-- Everyone will have to work on a personal fork of the main repository.
-- The merge to the main repository must be done by merge request on the develop branch subject to approval by the responsible owner.
+##collaboration##
 
-"Fork" repository
-------------
-- Make a request by email to be added to the project as a collaborator.
-- Create a personal fork from the main repository: https://github.com/celestin211/P8-BOSONGO-TODOLIST
-- After the fork of the repository to your personal space and the clone on your machine, remember to add the link to the main that you will name "upstream": `git remote add upstream https://github.com/celestin211/P8-BOSONGO-TODOLIST
-- Update the develop branch with a `git pull upstream develop` and proceed to install the project, see README.md
+Le développement de l’application doit respecter les normes de qualité PSR-4 et dois bien entendu respecter les deux contrôleurs de qualité mis en place. Les liens vers les Dashbords sont disponibles dans l’Audit. Lien : https://github.com/celestin211/P8-BOSONGO-TODOLIST
 
-Contribute to the project
---------------------
-- On github, create an issue that describes the work you are going to do
-- Create a new feat/name branch from develop
-- Write your code and write the tests
-- Control the tests: `bin phpunit/phpunit docs/test-coverage`
-- Commit and push your work to your personal fork
-- On Github, create a merge request from your new branch to the develop branch of the main start.
+Pour la collaboration en elle-même, le système est déjà mis en place grâce au github. Mais je pense que la création d’une organisation sur le site serrais un plus pour le management du projet et des contributeurs. Actuellement deux possibilités peuvent être mis en place pour la modification du code.
+
+Soit de fork le main Repository ou bien d’invité le contributeur par le créateur du Repository. Et ensuite, de faire les manipulations décrites sur la page 4. Pour les bonnes pratiques de git, il faudra créer une branche par fonctionnalité a développé. Ou sinon une branche par développeur au minimum. Cela évitera les conflits de fichiers. Car ci un développeur modifie le même fichier qu’un autre il y aura un conflit, et cela pourrais avoir des problèmes sur le projet .
+
+
