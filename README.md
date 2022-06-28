@@ -1,59 +1,77 @@
 #OPENCLASSROOMS TodoList#
+ 
+https://openclassrooms.com/fr/paths/59/projects/44/assignment
+  
+  
+https://bosongotodolist.fr
+                                                        
+## Descriptif du besoin ##
 
-' Description of need '
+Vous venez d’intégrer une startup dont le cœur de métier est une application permettant de gérer ses tâches quotidiennes. L’entreprise vient tout juste d’être montée, et l’application a dû être développée à toute vitesse pour permettre de montrer à de potentiels investisseurs que le concept est viable (on parle de Minimum Viable Product ou MVP).
 
-'Bug Fixes '
+Le choix du développeur précédent a été d’utiliser le framework PHP Symfony, un framework que vous commencez à bien connaître !
 
-' A task must be attached to a user '
+Bonne nouvelle ! ToDo & Co a enfin réussi à lever des fonds pour permettre le développement de l’entreprise et surtout de l’application.
 
-Currently, when a task is created, it is not attached to a user. You are asked to bring the
-necessary corrections so that automatically, when the task is saved, the authenticated user is attached to
-the newly created task.
+Votre rôle ici est donc d’améliorer la qualité de l’application. La qualité est un concept qui englobe bon nombre de sujets : on parle souvent de qualité de code, mais il y a également la qualité perçue par l’utilisateur de l’application ou encore la qualité perçue par les collaborateurs de l’entreprise, et enfin la qualité que vous percevez lorsqu’il vous faut travailler sur le projet.
 
-When editing the task, the author cannot be changed.
+Ainsi, pour ce dernier projet de spécialisation, vous êtes dans la peau d’un développeur expérimenté en charge des tâches suivantes :
 
-For tasks already created, they must be attached to an “anonymous” user.
-Choose a role for a user
+l’implémentation de nouvelles fonctionnalités ;
+la correction de quelques anomalies ;
+et l’implémentation de tests automatisés.
+Il vous est également demandé d’analyser le projet grâce à des outils vous permettant d’avoir une vision d’ensemble de la qualité du code et des différents axes de performance de l’application.
 
-When creating a user, it must be possible to choose a role for it. The roles listed are
-following:
+Il ne vous est pas demandé de corriger les points remontés par l’audit de qualité de code et de performance. Cela dit, si le temps vous le permet, ToDo & Co sera ravi que vous réduisiez la dette technique de cette application.
+### Corrections de bogues ###
 
-  - user role (ROLE_USER);
-  - administrator role (ROLE_ADMIN).
+### Une tâche doit être attachée à un utilisateur ###
 
-When modifying a user, it is also possible to change the role of a user.
+Actuellement, lorsqu'une tâche est créée, elle n'est pas rattachée à un utilisateur. Il vous est demandé d'apporter le
+corrections nécessaires pour que automatiquement, lors de l'enregistrement de la tâche, l'utilisateur authentifié soit rattaché à
+la tâche nouvellement créée.
 
-' Implementing new features '
+Lors de la modification de la tâche, l'auteur ne peut pas être modifié.
 
-' Permission '
+Pour les tâches déjà créées, elles doivent être rattachées à un utilisateur « anonyme ».
+Choisir un rôle pour un utilisateur
 
-Only users with the administrator role (ROLE_ADMIN) should be able to access the management pages of
-users.
+Lors de la création d'un utilisateur, il doit être possible de lui attribuer un rôle. Les rôles répertoriés sont
+Suivant:
 
-Tasks can only be deleted by users who created the task in question.
+  - rôle d'utilisateur (ROLE_USER) ;
+  - rôle d'administrateur (ROLE_ADMIN).
 
-Tasks attached to the “anonymous” user can only be deleted by users with the
-administrator role (ROLE_ADMIN).
+Lors de la modification d'un utilisateur, il est également possible de changer le rôle d'un utilisateur.
 
-' Implementing automated tests '
+### Implémentation de nouvelles fonctionnalités ###
 
-You are required to implement the automated tests (unit and functional tests) necessary to ensure that
-the operation of the application is well in line with the requests.
+#### Autorisation ####
 
-These tests must be implemented with PHPUnit; you can also use Behat for the functional part.
+Seuls les utilisateurs ayant le rôle d'administrateur (ROLE_ADMIN) doivent pouvoir accéder aux pages de gestion de
+utilisateurs.
 
-You will provide test data in order to be able to prove operation in the cases explained in this document.
+Les tâches ne peuvent être supprimées que par les utilisateurs qui ont créé la tâche en question.
 
-' Facility '
+Les tâches attachées à l'utilisateur "anonyme" ne peuvent être supprimées que par les utilisateurs
+rôle d'administrateur (ROLE_ADMIN).
+#### Mise en place de tests automatisés ####
 
-1. Clone the repo:
+Vous êtes amené à mettre en place les tests automatisés (tests unitaires et fonctionnels) nécessaires pour vous assurer que
+le fonctionnement de l'application est bien en adéquation avec les demandes.
+
+Ces tests doivent être implémentés avec PHPUnit ; vous pouvez également utiliser Behat pour la partie fonctionnelle.
+
+## Facilité ##
+
+1. Clone le repo:
 ```
-  https://github.com/celestin211/P8-BOSONGO-TODOLIST
+    git clone https://github.com/celestin211/P8-BOSONGO-TODOLIST
 ```
 
-2. Edit the .env with your information.
+2. Editer the .env with your information.
 
-3. Install dependencies:
+3. Installer les dépendencies:
 ```
     composer install
 ```
